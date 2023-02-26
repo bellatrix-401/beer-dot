@@ -1,0 +1,9 @@
+.main {
+  background: linear-gradient(180deg, #000000d1 30%, #6a6a6a00 100%);
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.goHome {
+  cursor: pointer;
+}

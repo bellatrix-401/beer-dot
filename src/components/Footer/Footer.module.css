@@ -1,0 +1,28 @@
+.main {
+  background-color: #f7f2f26b;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.iconsWrapper {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.iconsWrapper img:hover {
+  cursor: pointer;
+  filter: sepia(90%);
+}
+
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+

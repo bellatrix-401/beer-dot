@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { getPathId } from '@component/utils'
 import ProductDetail from '@component/src/components/ProductDetail'
 import { useEffect, useState } from 'react'
 import { getProductBySku } from '@component/src/services/stock.service'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Detail({ stockData, productData }) {
   const product = JSON.parse(productData)
@@ -20,7 +17,7 @@ export default function Detail({ stockData, productData }) {
   })
 
   const fetchData = async () => {
-    const resp = await handleStock(product.skus)
+    const resp = await handleStock(product?.skus)
     setStock(resp)
   }
 
